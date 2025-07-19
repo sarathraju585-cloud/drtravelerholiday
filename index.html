@@ -3,32 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr. Traveler India</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Dr. Traveler</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background: #fff; color: #222; }
-    header { background: #0d3b66; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; color: #fff; position: sticky; top: 0; z-index: 10; }
-    header nav a { color: #fff; margin-left: 1rem; text-decoration: none; font-weight: 500; }
-    .hero { background: url('https://images.unsplash.com/photo-1588854337221-4a4b6e2a67b2?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; padding: 1rem; }
-    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
-    .hero a { padding: 0.8rem 1.5rem; background: #ffa41b; color: #000; text-decoration: none; margin: 0.5rem; border-radius: 5px; }
-    section { padding: 3rem 2rem; text-align: center; }
-    h2 { margin-bottom: 1.5rem; color: #0d3b66; }
-    .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
-    .card { background: #f2f2f2; padding: 1rem; border-radius: 10px; width: 260px; }
-    .card img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem; }
-    .features, .reviews { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
-    .feature, .review { background: #f9f9f9; padding: 1rem; border-radius: 10px; width: 200px; }
-    .insta { margin: 2rem 0; }
-    footer { background: #0d3b66; color: #fff; text-align: center; padding: 2rem; }
-    form { max-width: 400px; margin: auto; display: flex; flex-direction: column; gap: 1rem; }
-    input, textarea { padding: 0.7rem; border: 1px solid #ccc; border-radius: 5px; }
-    button { background: #ffa41b; padding: 0.8rem; border: none; border-radius: 5px; cursor: pointer; }
-    @media (max-width: 768px) {
-      .cards, .features, .reviews { flex-direction: column; align-items: center; }
-      header nav { display: flex; flex-direction: column; align-items: flex-end; }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background: #0d3b66;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .highlight {
+      background: #ffa41b;
+      color: black;
+      padding: 0.7rem 1.5rem;
+      display: inline-block;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+    .package {
+      background: white;
+      margin: 1rem auto;
+      max-width: 400px;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      background: #0d3b66;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background: #ffa41b;
+      border: none;
+      cursor: pointer;
+      color: black;
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -36,78 +70,32 @@
 
 <header>
   <h1>Dr. Traveler</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Packages</a>
-    <a href="#">About</a>
-    <a href="#">Reviews</a>
-    <a href="#">Contact</a>
-  </nav>
+  <p>Travel heals. We prescribe it right.</p>
 </header>
 
-<section class="hero">
-  <h1>Travel heals. We prescribe it right.</h1>
-  <p>100,000+ Happy Faces. Trusted Since 2019.</p>
-  <a href="#packages">Explore Packages</a>
-  <a href="https://wa.me/91XXXXXXXXXX">WhatsApp Us</a>
-</section>
+<div class="section">
+  <h2>🌍 100,000+ Happy Faces Since 2019</h2>
+  <p>Affordable & nature-inspired trips across India</p>
+  <a href="https://wa.me/91XXXXXXXXXX" class="highlight">Chat on WhatsApp</a>
+</div>
 
-<section id="packages">
+<div class="section" id="packages">
   <h2>Top Packages</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://source.unsplash.com/300x200/?munnar,kerala" alt="Munnar" />
-      <h3>Munnar Escape</h3>
-      <p>2N/3D - Tea Plantations & Chilled Mornings</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/300x200/?houseboat,kerala" alt="Alappuzha" />
-      <h3>Alappuzha Houseboat</h3>
-      <p>1N/2D - Backwaters + Local Lunch</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/300x200/?coorg,hills" alt="Coorg" />
-      <h3>Coorg Getaway</h3>
-      <p>3N/4D - Hills, Coffee & Mist</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/300x200/?manali,snow" alt="Manali" />
-      <h3>Manali Adventure</h3>
-      <p>5N/6D - Snow, Solang & Spiti</p>
-    </div>
+  <div class="package">
+    <h3>Munnar</h3>
+    <p>2N/3D – Tea Garden Stay + Local Food</p>
   </div>
-</section>
-
-<section>
-  <h2>Why Choose Us?</h2>
-  <div class="features">
-    <div class="feature">✅ Personalized Itineraries</div>
-    <div class="feature">🚐 Free Refreshment Kit</div>
-    <div class="feature">🧘 Nature-Inspired Trips</div>
-    <div class="feature">📞 24x7 Support</div>
+  <div class="package">
+    <h3>Alappuzha</h3>
+    <p>1N/2D – Houseboat + Village Tour</p>
   </div>
-</section>
-
-<section>
-  <h2>What Our Travelers Say</h2>
-  <div class="reviews">
-    <div class="review">
-      ⭐⭐⭐⭐⭐<br>
-      "Amazing team, seamless planning."<br>– Priya, Kochi
-    </div>
-    <div class="review">
-      ⭐⭐⭐⭐⭐<br>
-      "Got a surprise box – loved it!"<br>– Arjun, Bengaluru
-    </div>
+  <div class="package">
+    <h3>Manali</h3>
+    <p>5N/6D – Snow, Solang & Adventure</p>
   </div>
-</section>
+</div>
 
-<section class="insta">
-  <h2>Live from the Road</h2>
-  <p>Follow us @dr.traveler.india</p>
-</section>
-
-<section>
+<div class="section" id="inquiry">
   <h2>Quick Inquiry</h2>
   <form>
     <input type="text" placeholder="Your Name" required />
@@ -116,12 +104,12 @@
     <textarea rows="3" placeholder="Your Message"></textarea>
     <button type="submit">Send</button>
   </form>
-</section>
+</div>
 
 <footer>
-  <p>🌐 www.drtravelerholiday.com | 📧 drtravelerindia@gmail.com</p>
-  <p>📍 Alappuzha, Kerala | 📲 IG | FB | YouTube</p>
-  <p>© 2025 Dr. Traveler. All rights reserved.</p>
+  <p>📍 Alappuzha, Kerala | 🌐 www.drtravelerholiday.com</p>
+  <p>📧 drtravelerindia@gmail.com | 📞 +91 XXXXX-XXXXX</p>
+  <p>© 2025 Dr. Traveler</p>
 </footer>
 
 </body>
