@@ -2,131 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr. Traveler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Traveler India (DTI) Holidays LLP</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #222;
+      background-color: #f9f9f9;
+      color: #333;
     }
+
     header {
-      background: #0d3b66;
-      color: white;
+      background-color: #e6f7ff;
+      padding: 20px;
       text-align: center;
-      padding: 1.5rem 1rem;
+      color: #0077b6;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 28px;
     }
-    .section {
-      padding: 2rem 1rem;
-      text-align: center;
+
+    header h2 {
+      margin: 5px 0 0;
+      font-size: 16px;
+      color: #005b8f;
     }
-    .highlight {
-      background: #ffa41b;
-      color: black;
-      padding: 0.7rem 1.5rem;
-      display: inline-block;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 1rem;
-    }
-    .info-bar {
-      background: #ffeacc;
-      color: #333;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-    .package {
-      background: white;
-      margin: 1rem auto;
-      max-width: 400px;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    footer {
-      background: #0d3b66;
+
+    nav {
+      background-color: #0077b6;
       color: white;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 10px;
     }
-    input, textarea, button {
-      width: 100%;
-      padding: 0.7rem;
-      margin-top: 0.5rem;
-      border-radius: 5px;
+
+    section {
+      padding: 30px;
+    }
+
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
       border: 1px solid #ccc;
-      font-size: 1rem;
+      border-left: 5px solid #0077b6;
+      padding: 15px;
+      border-radius: 5px;
     }
-    button {
-      background: #ffa41b;
-      border: none;
-      cursor: pointer;
-      color: black;
-      margin-top: 1rem;
+
+    .card h3 {
+      color: #0077b6;
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #e6f7ff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #0077b6;
+    }
+
+    a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+
+    .contact {
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #0077b6;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #005f91;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Dr. Traveler</h1>
-  <p>Travel heals. We prescribe it right.</p>
-</header>
+  <header>
+    <h1>DOCTOR TRAVELER INDIA (DTI) HOLIDAYS LLP</h1>
+    <h2>PREMIUM CUSTOMIZED TRIPS | FLIGHTS | HOTELS</h2>
+    <h3>COLLEGE | FAMILY | CORPORATE</h3>
+    <div class="contact">
+      📞 +91 6282632019 |
+      📧 <a href="mailto:info@drtravelerholiday.com">info@drtravelerholiday.com</a> |
+      📱 <a href="https://wa.me/916282632019" target="_blank">WhatsApp Us</a>
+    </div>
+  </header>
 
-<div class="info-bar">
-  <strong>PREMIUM CUSTOMIZED TRIPS | FLIGHTS | HOTELS</strong><br/>
-  COLLEGE | FAMILY | CORPORATE<br/>
-  📞 +91 628263 2019 | 📧 info@drtravelerholiday.com<br/>
-  💬 <a href="https://wa.me/916282632019" target="_blank" style="color:#0d3b66;text-decoration:underline;">Chat on WhatsApp</a>
-</div>
+  <nav>
+    ✈️ Explore Our Popular Packages
+  </nav>
 
-<div class="section">
-  <h2>🌍 100,000+ Happy Faces Since 2019</h2>
-  <p>Affordable & nature-inspired trips across India</p>
-  <a href="https://wa.me/916282632019" class="highlight" target="_blank">Message Us on WhatsApp</a>
-</div>
+  <section>
+    <h2>🔥 Domestic Packages</h2>
+    <div class="packages">
+      <div class="card">
+        <h3>Agra – Delhi – Manali</h3>
+        <p>Perfect mix of heritage and snow. Includes Taj Mahal, Red Fort & Solang Valley.</p>
+      </div>
+      <div class="card">
+        <h3>Kashmir Paradise Tour</h3>
+        <p>Srinagar, Gulmarg, Pahalgam. Houseboat stay, gondola, snow fun!</p>
+      </div>
+      <div class="card">
+        <h3>Hyderabad Heritage Getaway</h3>
+        <p>Charminar, Ramoji Film City, Hussain Sagar & delicious Hyderabadi cuisine.</p>
+      </div>
+      <div class="card">
+        <h3>Kerala Backwaters</h3>
+        <p>Munnar – Alleppey – Thekkady. Tea gardens, houseboat & ayurvedic bliss.</p>
+      </div>
+      <div class="card">
+        <h3>Leh – Ladakh Adventure</h3>
+        <p>Khardung La, Nubra Valley, Pangong Lake. Stunning landscapes!</p>
+      </div>
+    </div>
+  </section>
 
-<div class="section" id="packages">
-  <h2>Top Packages</h2>
-  <div class="package">
-    <h3>Munnar</h3>
-    <p>2N/3D – Tea Garden Stay + Local Food</p>
-  </div>
-  <div class="package">
-    <h3>Alappuzha</h3>
-    <p>1N/2D – Houseboat + Village Tour</p>
-  </div>
-  <div class="package">
-    <h3>Manali</h3>
-    <p>5N/6D – Snow, Solang & Adventure</p>
-  </div>
-</div>
+  <section>
+    <h2>🌍 International Packages</h2>
+    <div class="packages">
+      <div class="card">
+        <h3>Dubai Luxury Escape</h3>
+        <p>Burj Khalifa, desert safari, shopping & skyscrapers!</p>
+      </div>
+      <div class="card">
+        <h3>Bali Tropical Vibes</h3>
+        <p>Ubud, Kuta, Nusa Penida. Beaches, temples, waterfalls & vibes!</p>
+      </div>
+      <div class="card">
+        <h3>Thailand Trio</h3>
+        <p>Bangkok, Pattaya, Phuket – beach, culture, and fun!</p>
+      </div>
+      <div class="card">
+        <h3>Maldives Honeymoon</h3>
+        <p>Private island, water villa, snorkelling & luxury stay.</p>
+      </div>
+      <div class="card">
+        <h3>Singapore & Malaysia</h3>
+        <p>Universal Studios, Petronas Towers, Night Safari & city vibes.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="section" id="inquiry">
-  <h2>Quick Inquiry</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="text" placeholder="Destination" required />
-    <input type="text" placeholder="WhatsApp Number" required />
-    <textarea rows="3" placeholder="Your Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</div>
-
-<footer>
-  <p>📍 Alappuzha, Kerala | 🌐 www.drtravelerholiday.com</p>
-  <p>📧 info@drtravelerholiday.com | 📞 +91 628263 2019</p>
-  <p>© 2025 Dr. Traveler</p>
-</footer>
+  <footer>
+    ❤️ Thank you for choosing DTI Holidays LLP – Your next adventure starts here!<br>
+    <a href="https://drtravelerholiday.com">www.drtravelerholiday.com</a>
+  </footer>
 
 </body>
 </html>
